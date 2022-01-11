@@ -25,9 +25,13 @@ https://youtu.be/QFZw0eesHTw
 - インストールから起動
 
 `git clone https://github.com/Takehiro-Hasegawa/robosys2021_LED-dev-driver.git`
+
 `cd robosys2021_LED-dev-driver`
+
 `make`
+
 `sudo insmod myled.ko`
+
 `sudo chmod 666 /dev/myled0`
 - GPIO25 LEDの消灯
  
