@@ -21,16 +21,31 @@
 
 # 動画URL
 https://youtu.be/QFZw0eesHTw
-# コマンド
+# 実行
+- インストールから起動
+
+`git clone https://github.com/Takehiro-Hasegawa/robosys2021_LED-dev-driver.git`
+`cd robosys2021_LED-dev-driver`
+`make`
+`sudo insmod myled.ko`
+`sudo chmod 666 /dev/myled0`
 - GPIO25 LEDの消灯
+ 
  `echo > 0 /dev/myled0`
 - GPIO25 LEDの点灯
+
  `echo > 1 /dev/myled0`
  - GPIO15 LEDの消灯
+ 
  `echo > 2 /dev/myled0`
  - GPIO15 LEDの消灯
+ 
  `echo > 3 /dev/myled0`
  - 踏切を模したLEDの点滅
+ 
  `echo > 4 /dev/myled0`
  - The train will pass soon The train has passedの確認
  `dmesg`
+- 停止
+
+`sudo rmmod myled`
