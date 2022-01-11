@@ -45,6 +45,7 @@ https://youtu.be/QFZw0eesHTw
  
  `echo > 4 /dev/myled0`
  - The train will pass soon The train has passedの確認
+ 
  `dmesg`
 - 停止
 
